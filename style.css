@@ -1,6 +1,8 @@
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 /* header */
 .header {
@@ -189,8 +191,36 @@ p {
   height: 355px;
   /* border: 1px solid; */
   margin-right: 15px;
+  overflow: hidden;
 }
 .card > img {
   width: 100%;
   height: 100%;
+}
+
+.box-text-hover {
+  position: absolute;
+  top: 0px;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.box-tex-content > span {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: .85em;
+}
+.box-tex-content {
+  margin: 10px 10px 0px 15px;
+}
+.card:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.box-text-hover:hover {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
